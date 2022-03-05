@@ -56,9 +56,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./output/${fileName}-README.md`, generateMarkdown(data), (err) => 
-      err ? console.log(err) : console.log(`Success! Check the 'output' folder`)
-    );
+    try {
+        if (!fs.existsSync(fileName)) {
+          fs.mkdirSync(fileName);
+        }
+        fs.writeFile(`./${fileName}/README.md`, generateMarkdown(data), (err) => 
+        err ? console.log(err) : console.log(`Success! Check the '${fileName}' folder`)
+      );
+      } catch (err) {
+        console.error(err)
+      }
+
  }
 
 // TODO: Create a function to initialize app
