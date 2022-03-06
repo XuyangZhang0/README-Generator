@@ -80,7 +80,7 @@ function generateMarkdown(data) {
   ${data.tests}
   
   ## Questions
-  Find me on Github ${data.github} | Send me an Email ${data.email}
+  [Github Profile](https://github.com/${data.github}) | Send me an Email ${data.email}
 `;
 }
 

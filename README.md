@@ -28,4 +28,4 @@
   try out different license types, and see different badges generated.
   
   ## Questions
-  Find me on Github xuyangzhang0 | Send me an Email zhangxuyang.chn@gmail.com
+  [Github Profile](https://github.com/xuyangzhang0) | Send me an Email zhangxuyang.chn@gmail.com
